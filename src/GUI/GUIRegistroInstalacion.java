@@ -16,6 +16,8 @@ public class GUIRegistroInstalacion extends javax.swing.JInternalFrame {
      */
     public GUIRegistroInstalacion() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

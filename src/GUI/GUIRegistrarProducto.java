@@ -16,6 +16,8 @@ public class GUIRegistrarProducto extends javax.swing.JInternalFrame {
      */
     public GUIRegistrarProducto() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

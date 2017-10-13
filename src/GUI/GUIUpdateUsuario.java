@@ -16,6 +16,8 @@ public class GUIUpdateUsuario extends javax.swing.JInternalFrame {
      */
     public GUIUpdateUsuario() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

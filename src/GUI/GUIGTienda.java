@@ -18,6 +18,8 @@ public class GUIGTienda extends javax.swing.JFrame {
      */
     public GUIGTienda() {
         initComponents();
+        setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

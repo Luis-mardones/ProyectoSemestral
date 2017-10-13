@@ -16,6 +16,8 @@ public class GUISalidaProducto extends javax.swing.JInternalFrame {
      */
     public GUISalidaProducto() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

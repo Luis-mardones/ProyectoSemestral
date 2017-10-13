@@ -16,6 +16,8 @@ public class GUILogout extends javax.swing.JInternalFrame {
      */
     public GUILogout() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

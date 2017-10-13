@@ -16,6 +16,8 @@ public class GUIListaInstalacion extends javax.swing.JInternalFrame {
      */
     public GUIListaInstalacion() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

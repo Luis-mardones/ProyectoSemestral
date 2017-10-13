@@ -19,6 +19,7 @@ public class GUIAdmin extends javax.swing.JFrame {
     public GUIAdmin() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -67,7 +68,7 @@ public class GUIAdmin extends javax.swing.JFrame {
         );
         desktopPaneLayout.setVerticalGroup(
             desktopPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 684, Short.MAX_VALUE)
+            .addGap(0, 788, Short.MAX_VALUE)
         );
 
         fileMenu.setMnemonic('f');

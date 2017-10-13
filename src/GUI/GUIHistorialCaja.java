@@ -16,6 +16,8 @@ public class GUIHistorialCaja extends javax.swing.JInternalFrame {
      */
     public GUIHistorialCaja() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

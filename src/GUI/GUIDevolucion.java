@@ -16,6 +16,8 @@ public class GUIDevolucion extends javax.swing.JInternalFrame {
      */
     public GUIDevolucion() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

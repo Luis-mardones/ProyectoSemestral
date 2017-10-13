@@ -16,6 +16,8 @@ public class GUIInforme extends javax.swing.JInternalFrame {
      */
     public GUIInforme() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

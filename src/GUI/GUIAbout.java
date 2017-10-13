@@ -16,6 +16,8 @@ public class GUIAbout extends javax.swing.JInternalFrame {
      */
     public GUIAbout() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

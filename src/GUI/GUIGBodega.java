@@ -18,6 +18,8 @@ public class GUIGBodega extends javax.swing.JFrame {
      */
     public GUIGBodega() {
         initComponents();
+        setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

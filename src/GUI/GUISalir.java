@@ -16,6 +16,8 @@ public class GUISalir extends javax.swing.JInternalFrame {
      */
     public GUISalir() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

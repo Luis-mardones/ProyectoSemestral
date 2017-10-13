@@ -18,6 +18,8 @@ public class GUIVendedor extends javax.swing.JFrame {
      */
     public GUIVendedor() {
         initComponents();
+        setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**

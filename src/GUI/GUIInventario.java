@@ -16,6 +16,8 @@ public class GUIInventario extends javax.swing.JInternalFrame {
      */
     public GUIInventario() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

@@ -16,6 +16,8 @@ public class GUIUpdatePersonal extends javax.swing.JInternalFrame {
      */
     public GUIUpdatePersonal() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

@@ -16,6 +16,8 @@ public class GUIRegistroPersonal extends javax.swing.JInternalFrame {
      */
     public GUIRegistroPersonal() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

@@ -16,6 +16,8 @@ public class GUICaja extends javax.swing.JInternalFrame {
      */
     public GUICaja() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

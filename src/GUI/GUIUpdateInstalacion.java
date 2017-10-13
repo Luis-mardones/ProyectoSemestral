@@ -16,6 +16,8 @@ public class GUIUpdateInstalacion extends javax.swing.JInternalFrame {
      */
     public GUIUpdateInstalacion() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

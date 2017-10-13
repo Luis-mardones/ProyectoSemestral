@@ -16,6 +16,8 @@ public class GUIRegistrarUsuario extends javax.swing.JInternalFrame {
      */
     public GUIRegistrarUsuario() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

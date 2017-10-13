@@ -16,6 +16,8 @@ public class GUISeleccionInstalacion extends javax.swing.JInternalFrame {
      */
     public GUISeleccionInstalacion() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**

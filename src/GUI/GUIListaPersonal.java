@@ -16,6 +16,8 @@ public class GUIListaPersonal extends javax.swing.JInternalFrame {
      */
     public GUIListaPersonal() {
         initComponents();
+        this.setClosable(true);
+        this.setIconifiable(true);
     }
 
     /**
