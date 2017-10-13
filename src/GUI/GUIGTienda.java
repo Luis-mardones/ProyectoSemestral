@@ -5,6 +5,8 @@
  */
 package GUI;
 
+import java.awt.Dimension;
+
 /**
  *
  * @author Familia
@@ -33,24 +35,23 @@ public class GUIGTienda extends javax.swing.JFrame {
         desktopPane = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
-        openMenuItem = new javax.swing.JMenuItem();
-        exitMenuItem = new javax.swing.JMenuItem();
+        desconectar = new javax.swing.JMenuItem();
+        salir = new javax.swing.JMenuItem();
         editMenu = new javax.swing.JMenu();
-        cutMenuItem = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        deleteMenuItem = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        listaprod = new javax.swing.JMenuItem();
+        ingresoprod = new javax.swing.JMenuItem();
+        salidaprod = new javax.swing.JMenuItem();
+        devolucionprod = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
+        listaper = new javax.swing.JMenuItem();
+        registroper = new javax.swing.JMenuItem();
+        actualizacionper = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenuItem10 = new javax.swing.JMenuItem();
+        IM = new javax.swing.JMenuItem();
+        HV = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
-        jMenuItem11 = new javax.swing.JMenuItem();
-        jMenuItem12 = new javax.swing.JMenuItem();
+        ayuda = new javax.swing.JMenuItem();
+        about = new javax.swing.JMenuItem();
 
         jMenu3.setText("File");
         jMenuBar2.add(jMenu3);
@@ -63,107 +64,143 @@ public class GUIGTienda extends javax.swing.JFrame {
         fileMenu.setMnemonic('f');
         fileMenu.setText("Inicio");
 
-        openMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));
-        openMenuItem.setMnemonic('o');
-        openMenuItem.setText("Desconectar");
-        openMenuItem.addActionListener(new java.awt.event.ActionListener() {
+        desconectar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));
+        desconectar.setMnemonic('o');
+        desconectar.setText("Desconectar");
+        desconectar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                openMenuItemActionPerformed(evt);
+                desconectarActionPerformed(evt);
             }
         });
-        fileMenu.add(openMenuItem);
+        fileMenu.add(desconectar);
 
-        exitMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
-        exitMenuItem.setMnemonic('x');
-        exitMenuItem.setText("Salir");
-        exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
+        salir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
+        salir.setMnemonic('x');
+        salir.setText("Salir");
+        salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitMenuItemActionPerformed(evt);
+                salirActionPerformed(evt);
             }
         });
-        fileMenu.add(exitMenuItem);
+        fileMenu.add(salir);
 
         jMenuBar1.add(fileMenu);
 
         editMenu.setMnemonic('e');
         editMenu.setText("Tienda");
 
-        cutMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_MASK));
-        cutMenuItem.setMnemonic('t');
-        cutMenuItem.setText("Lista de Productos");
-        editMenu.add(cutMenuItem);
+        listaprod.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_MASK));
+        listaprod.setMnemonic('t');
+        listaprod.setText("Lista de Productos");
+        listaprod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                listaprodActionPerformed(evt);
+            }
+        });
+        editMenu.add(listaprod);
 
-        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem3.setText("Ingreso de Producto");
-        editMenu.add(jMenuItem3);
+        ingresoprod.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_MASK));
+        ingresoprod.setText("Ingreso de Producto");
+        ingresoprod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ingresoprodActionPerformed(evt);
+            }
+        });
+        editMenu.add(ingresoprod);
 
-        deleteMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
-        deleteMenuItem.setMnemonic('d');
-        deleteMenuItem.setText("Salida de Producto");
-        editMenu.add(deleteMenuItem);
+        salidaprod.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
+        salidaprod.setMnemonic('d');
+        salidaprod.setText("Salida de Producto");
+        salidaprod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salidaprodActionPerformed(evt);
+            }
+        });
+        editMenu.add(salidaprod);
 
-        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem4.setText("Devolucion Productos");
-        editMenu.add(jMenuItem4);
+        devolucionprod.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK));
+        devolucionprod.setText("Devolucion Productos");
+        devolucionprod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                devolucionprodActionPerformed(evt);
+            }
+        });
+        editMenu.add(devolucionprod);
 
         jMenuBar1.add(editMenu);
 
         jMenu5.setText("Personal");
 
-        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem5.setText("Lista Personal");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+        listaper.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.ALT_MASK));
+        listaper.setText("Lista Personal");
+        listaper.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
+                listaperActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem5);
+        jMenu5.add(listaper);
 
-        jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem6.setText("Registro Personal");
-        jMenu5.add(jMenuItem6);
+        registroper.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.ALT_MASK));
+        registroper.setText("Registro Personal");
+        registroper.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registroperActionPerformed(evt);
+            }
+        });
+        jMenu5.add(registroper);
 
-        jMenuItem7.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem7.setText("Actualizacion Personal");
-        jMenu5.add(jMenuItem7);
+        actualizacionper.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
+        actualizacionper.setText("Actualizacion Personal");
+        actualizacionper.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                actualizacionperActionPerformed(evt);
+            }
+        });
+        jMenu5.add(actualizacionper);
 
         jMenuBar1.add(jMenu5);
 
         jMenu6.setText("Registro");
 
-        jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem8.setText("Informe Mensual");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+        IM.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK));
+        IM.setText("Informe Mensual");
+        IM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
+                IMActionPerformed(evt);
             }
         });
-        jMenu6.add(jMenuItem8);
+        jMenu6.add(IM);
 
-        jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem9.setText("Informe Bisemanal");
-        jMenu6.add(jMenuItem9);
-
-        jMenuItem10.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem10.setText("Historial de Venta");
-        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+        HV.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.ALT_MASK));
+        HV.setText("Historial de Venta");
+        HV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem10ActionPerformed(evt);
+                HVActionPerformed(evt);
             }
         });
-        jMenu6.add(jMenuItem10);
+        jMenu6.add(HV);
 
         jMenuBar1.add(jMenu6);
 
         jMenu7.setText("Ayuda");
 
-        jMenuItem11.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem11.setText("Contenido");
-        jMenu7.add(jMenuItem11);
+        ayuda.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
+        ayuda.setText("Contenido");
+        ayuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ayudaActionPerformed(evt);
+            }
+        });
+        jMenu7.add(ayuda);
 
-        jMenuItem12.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem12.setText("Acerca de...");
-        jMenu7.add(jMenuItem12);
+        about.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.CTRL_MASK));
+        about.setText("Acerca de...");
+        about.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aboutActionPerformed(evt);
+            }
+        });
+        jMenu7.add(about);
 
         jMenuBar1.add(jMenu7);
 
@@ -183,25 +220,187 @@ public class GUIGTienda extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void openMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItemActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_openMenuItemActionPerformed
+    private void desconectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_desconectarActionPerformed
+        GUILogout ds = new GUILogout();
 
-    private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_exitMenuItemActionPerformed
+        this.desktopPane.add("GUILogout", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
 
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_desconectarActionPerformed
 
-    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem10ActionPerformed
+    private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
+        GUISalir ds = new GUISalir();
+
+        this.desktopPane.add("GUISalir", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_salirActionPerformed
+
+    private void listaperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listaperActionPerformed
+        GUIListaPersonal ds = new GUIListaPersonal();
+
+        this.desktopPane.add("GUIListaPersonal", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_listaperActionPerformed
+
+    private void IMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IMActionPerformed
+        GUIInforme ds = new GUIInforme();
+
+        this.desktopPane.add("GUIInforme", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_IMActionPerformed
+
+    private void HVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HVActionPerformed
+        GUIHistorialCaja ds = new GUIHistorialCaja();
+
+        this.desktopPane.add("GUIHistorialCaja", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_HVActionPerformed
+
+    private void listaprodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listaprodActionPerformed
+        GUIInventario ds = new GUIInventario();
+
+        this.desktopPane.add("GUIInventario", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_listaprodActionPerformed
+
+    private void ingresoprodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresoprodActionPerformed
+        GUIRegistrarProducto ds = new GUIRegistrarProducto();
+
+        this.desktopPane.add("GUIRegistrarProducto", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_ingresoprodActionPerformed
+
+    private void salidaprodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salidaprodActionPerformed
+        GUISalidaProducto ds = new GUISalidaProducto();
+
+        this.desktopPane.add("GUISalidaProducto", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_salidaprodActionPerformed
+
+    private void devolucionprodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_devolucionprodActionPerformed
+        GUIDevolucion ds = new GUIDevolucion();
+
+        this.desktopPane.add("GUIDevolucion", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_devolucionprodActionPerformed
+
+    private void registroperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registroperActionPerformed
+        GUIRegistroPersonal ds = new GUIRegistroPersonal();
+
+        this.desktopPane.add("GUIRegistroPersonal", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_registroperActionPerformed
+
+    private void actualizacionperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizacionperActionPerformed
+        GUIUpdatePersonal ds = new GUIUpdatePersonal();
+
+        this.desktopPane.add("GUIUpdatePersonal", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_actualizacionperActionPerformed
+
+    private void ayudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ayudaActionPerformed
+        GUIAyuda ds = new GUIAyuda();
+
+        this.desktopPane.add("GUIAyuda", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_ayudaActionPerformed
+
+    private void aboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutActionPerformed
+        GUIAbout ds = new GUIAbout();
+
+        this.desktopPane.add("GUIAbout", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_aboutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -214,7 +413,7 @@ public class GUIGTienda extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -239,12 +438,17 @@ public class GUIGTienda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem cutMenuItem;
-    private javax.swing.JMenuItem deleteMenuItem;
+    private javax.swing.JMenuItem HV;
+    private javax.swing.JMenuItem IM;
+    private javax.swing.JMenuItem about;
+    private javax.swing.JMenuItem actualizacionper;
+    private javax.swing.JMenuItem ayuda;
+    private javax.swing.JMenuItem desconectar;
     private javax.swing.JDesktopPane desktopPane;
+    private javax.swing.JMenuItem devolucionprod;
     private javax.swing.JMenu editMenu;
-    private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenuItem ingresoprod;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
@@ -252,17 +456,11 @@ public class GUIGTienda extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
-    private javax.swing.JMenuItem openMenuItem;
+    private javax.swing.JMenuItem listaper;
+    private javax.swing.JMenuItem listaprod;
+    private javax.swing.JMenuItem registroper;
+    private javax.swing.JMenuItem salidaprod;
+    private javax.swing.JMenuItem salir;
     // End of variables declaration//GEN-END:variables
 
 }

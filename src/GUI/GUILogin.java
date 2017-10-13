@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package GUI;
+
 import javax.swing.*;
 
 import javax.swing.JOptionPane;
@@ -140,47 +141,42 @@ public class GUILogin extends javax.swing.JFrame {
 
     private void Cancelar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancelar1ActionPerformed
         // TODO add your handling code here:
-                System.exit(0);
+        System.exit(0);
     }//GEN-LAST:event_Cancelar1ActionPerformed
 
     private void ConectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConectarActionPerformed
         // TODO add your handling code here:
         String admi = "administrador";
-      String conadmi = "admin";
-      String bodeg = "bodegero";
-      String conbodeg = "bodeg";
-      String Gbodeg = "gbodega";
-      String conGbodeg = "gbodeg";
-      String Gtienda = "gtienda";
-      String conGtienda = "gtien";
-      String Vendedor = "vendedor";
-      String conVendedor = "vende";
-      
-      String passw=new String(PasswordField.getPassword());
-      
-      if(UserField.getText().equals(admi)&& passw.equals(conadmi)){
-          GUIAdmin home =new GUIAdmin();
-          home.setVisible(true);
-      } 
-      else if(UserField.getText().equals(bodeg)&& passw.equals(conbodeg)){
-          GUIBodegero home =new GUIBodegero();
-          home.setVisible(true);
-      }
-      else if(UserField.getText().equals(Gbodeg)&& passw.equals(conGbodeg)){
-          GUIGBodega home =new GUIGBodega();
-          home.setVisible(true);
-      }
-      else if(UserField.getText().equals(Gtienda)&& passw.equals(conGtienda)){
-          GUIGTienda home =new GUIGTienda();
-          home.setVisible(true);
-      }
-      else if(UserField.getText().equals(Vendedor)&& passw.equals(conVendedor)){
-          GUIVendedor home =new GUIVendedor();
-          home.setVisible(true);
-      }
-      else{
-      JOptionPane.showMessageDialog(this, "Usuario y Contraseña Fallida");
-      }
+        String conadmi = "admin";
+        String bodeg = "bodegero";
+        String conbodeg = "bodeg";
+        String Gbodeg = "gbodega";
+        String conGbodeg = "gbodeg";
+        String Gtienda = "gtienda";
+        String conGtienda = "gtien";
+        String Vendedor = "vendedor";
+        String conVendedor = "vende";
+
+        String passw = new String(PasswordField.getPassword());
+
+        if (UserField.getText().equals(admi) && passw.equals(conadmi)) {
+            GUIAdmin home = new GUIAdmin();
+            home.setVisible(true);
+        } else if (UserField.getText().equals(bodeg) && passw.equals(conbodeg)) {
+            GUIBodegero home = new GUIBodegero();
+            home.setVisible(true);
+        } else if (UserField.getText().equals(Gbodeg) && passw.equals(conGbodeg)) {
+            GUIGBodega home = new GUIGBodega();
+            home.setVisible(true);
+        } else if (UserField.getText().equals(Gtienda) && passw.equals(conGtienda)) {
+            GUIGTienda home = new GUIGTienda();
+            home.setVisible(true);
+        } else if (UserField.getText().equals(Vendedor) && passw.equals(conVendedor)) {
+            GUIVendedor home = new GUIVendedor();
+            home.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(this, "Usuario y Contraseña Fallida");
+        }
     }//GEN-LAST:event_ConectarActionPerformed
 
     /**
@@ -188,7 +184,7 @@ public class GUILogin extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
 
-	//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */

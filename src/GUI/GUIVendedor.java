@@ -5,6 +5,8 @@
  */
 package GUI;
 
+import java.awt.Dimension;
+
 /**
  *
  * @author Familia
@@ -30,109 +32,129 @@ public class GUIVendedor extends javax.swing.JFrame {
         desktopPane = new javax.swing.JDesktopPane();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
-        saveAsMenuItem = new javax.swing.JMenuItem();
-        exitMenuItem = new javax.swing.JMenuItem();
+        Desconectar = new javax.swing.JMenuItem();
+        Salir = new javax.swing.JMenuItem();
         editMenu = new javax.swing.JMenu();
-        cutMenuItem = new javax.swing.JMenuItem();
-        copyMenuItem = new javax.swing.JMenuItem();
-        pasteMenuItem = new javax.swing.JMenuItem();
-        deleteMenuItem = new javax.swing.JMenuItem();
-        deleteMenuItem1 = new javax.swing.JMenuItem();
+        Inventario = new javax.swing.JMenuItem();
+        Venta = new javax.swing.JMenuItem();
+        Devolucion = new javax.swing.JMenuItem();
+        Caja = new javax.swing.JMenuItem();
         helpMenu = new javax.swing.JMenu();
-        contentMenuItem = new javax.swing.JMenuItem();
-        aboutMenuItem = new javax.swing.JMenuItem();
+        IM = new javax.swing.JMenuItem();
+        HV = new javax.swing.JMenuItem();
         fileMenu1 = new javax.swing.JMenu();
-        exitMenuItem1 = new javax.swing.JMenuItem();
-        exitMenuItem2 = new javax.swing.JMenuItem();
+        Ayuda = new javax.swing.JMenuItem();
+        About = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         fileMenu.setMnemonic('f');
         fileMenu.setText("Inicio");
 
-        saveAsMenuItem.setMnemonic('a');
-        saveAsMenuItem.setText("Desconectar");
-        saveAsMenuItem.addActionListener(new java.awt.event.ActionListener() {
+        Desconectar.setMnemonic('a');
+        Desconectar.setText("Desconectar");
+        Desconectar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                saveAsMenuItemActionPerformed(evt);
+                DesconectarActionPerformed(evt);
             }
         });
-        fileMenu.add(saveAsMenuItem);
+        fileMenu.add(Desconectar);
 
-        exitMenuItem.setMnemonic('x');
-        exitMenuItem.setText("Salir");
-        exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
+        Salir.setMnemonic('x');
+        Salir.setText("Salir");
+        Salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitMenuItemActionPerformed(evt);
+                SalirActionPerformed(evt);
             }
         });
-        fileMenu.add(exitMenuItem);
+        fileMenu.add(Salir);
 
         menuBar.add(fileMenu);
 
         editMenu.setMnemonic('e');
         editMenu.setText("Tienda");
 
-        cutMenuItem.setMnemonic('t');
-        cutMenuItem.setText("Lista de Productos");
-        editMenu.add(cutMenuItem);
-
-        copyMenuItem.setMnemonic('y');
-        copyMenuItem.setText("Inventario de Tienda");
-        editMenu.add(copyMenuItem);
-
-        pasteMenuItem.setMnemonic('p');
-        pasteMenuItem.setText("Venta de Productos");
-        editMenu.add(pasteMenuItem);
-
-        deleteMenuItem.setMnemonic('d');
-        deleteMenuItem.setText("Devolucion de Productos");
-        editMenu.add(deleteMenuItem);
-
-        deleteMenuItem1.setMnemonic('d');
-        deleteMenuItem1.setText("Realizar Caja");
-        deleteMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        Inventario.setMnemonic('y');
+        Inventario.setText("Inventario de Tienda");
+        Inventario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deleteMenuItem1ActionPerformed(evt);
+                InventarioActionPerformed(evt);
             }
         });
-        editMenu.add(deleteMenuItem1);
+        editMenu.add(Inventario);
+
+        Venta.setMnemonic('p');
+        Venta.setText("Venta de Productos");
+        Venta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VentaActionPerformed(evt);
+            }
+        });
+        editMenu.add(Venta);
+
+        Devolucion.setMnemonic('d');
+        Devolucion.setText("Devolucion de Productos");
+        Devolucion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DevolucionActionPerformed(evt);
+            }
+        });
+        editMenu.add(Devolucion);
+
+        Caja.setMnemonic('d');
+        Caja.setText("Realizar Caja");
+        Caja.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CajaActionPerformed(evt);
+            }
+        });
+        editMenu.add(Caja);
 
         menuBar.add(editMenu);
 
         helpMenu.setMnemonic('h');
         helpMenu.setText("Registro");
 
-        contentMenuItem.setMnemonic('c');
-        contentMenuItem.setText("Informe Bisemanal");
-        helpMenu.add(contentMenuItem);
+        IM.setMnemonic('c');
+        IM.setText("Informe Mensual");
+        IM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IMActionPerformed(evt);
+            }
+        });
+        helpMenu.add(IM);
 
-        aboutMenuItem.setMnemonic('a');
-        aboutMenuItem.setText("Historial de Venta");
-        helpMenu.add(aboutMenuItem);
+        HV.setMnemonic('a');
+        HV.setText("Historial de Venta");
+        HV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HVActionPerformed(evt);
+            }
+        });
+        helpMenu.add(HV);
 
         menuBar.add(helpMenu);
 
         fileMenu1.setMnemonic('f');
         fileMenu1.setText("Ayuda");
 
-        exitMenuItem1.setMnemonic('x');
-        exitMenuItem1.setText("Contenidos");
-        exitMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        Ayuda.setMnemonic('x');
+        Ayuda.setText("Contenidos");
+        Ayuda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitMenuItem1ActionPerformed(evt);
+                AyudaActionPerformed(evt);
             }
         });
-        fileMenu1.add(exitMenuItem1);
+        fileMenu1.add(Ayuda);
 
-        exitMenuItem2.setMnemonic('x');
-        exitMenuItem2.setText("Acerca de...");
-        exitMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        About.setMnemonic('x');
+        About.setText("Acerca de...");
+        About.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitMenuItem2ActionPerformed(evt);
+                AboutActionPerformed(evt);
             }
         });
-        fileMenu1.add(exitMenuItem2);
+        fileMenu1.add(About);
 
         menuBar.add(fileMenu1);
 
@@ -152,25 +174,145 @@ public class GUIVendedor extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_exitMenuItemActionPerformed
+    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
+        GUISalir ds = new GUISalir();
 
-    private void exitMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItem1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_exitMenuItem1ActionPerformed
+        this.desktopPane.add("GUISalir", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
 
-    private void exitMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItem2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_exitMenuItem2ActionPerformed
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
 
-    private void saveAsMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveAsMenuItemActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_saveAsMenuItemActionPerformed
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_SalirActionPerformed
 
-    private void deleteMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteMenuItem1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_deleteMenuItem1ActionPerformed
+    private void AyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AyudaActionPerformed
+        GUIAyuda ds = new GUIAyuda();
+
+        this.desktopPane.add("GUIAyuda", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_AyudaActionPerformed
+
+    private void AboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AboutActionPerformed
+        GUIAbout ds = new GUIAbout();
+
+        this.desktopPane.add("GUIAbout", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_AboutActionPerformed
+
+    private void DesconectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DesconectarActionPerformed
+        GUILogout ds = new GUILogout();
+
+        this.desktopPane.add("GUILogout", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_DesconectarActionPerformed
+
+    private void CajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CajaActionPerformed
+        GUICaja ds = new GUICaja();
+
+        this.desktopPane.add("GUICaja", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_CajaActionPerformed
+
+    private void InventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InventarioActionPerformed
+        GUIInventario ds = new GUIInventario();
+
+        this.desktopPane.add("GUIInventario", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_InventarioActionPerformed
+
+    private void VentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentaActionPerformed
+        GUIVenta ds = new GUIVenta();
+
+        this.desktopPane.add("GUIVenta", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_VentaActionPerformed
+
+    private void DevolucionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DevolucionActionPerformed
+        GUIDevolucion ds = new GUIDevolucion();
+
+        this.desktopPane.add("GUIDevolucion", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_DevolucionActionPerformed
+
+    private void IMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IMActionPerformed
+        GUIInforme ds = new GUIInforme();
+
+        this.desktopPane.add("GUIInforme", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_IMActionPerformed
+
+    private void HVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HVActionPerformed
+        GUIHistorialCaja ds = new GUIHistorialCaja();
+
+        this.desktopPane.add("GUIHistorialCaja", ds);
+        Dimension d1 = this.desktopPane.getSize();
+        Dimension d2 = ds.getSize();
+
+        Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
+        Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
+
+        ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
+        ds.setVisible(true);
+    }//GEN-LAST:event_HVActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,7 +325,7 @@ public class GUIVendedor extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -208,23 +350,22 @@ public class GUIVendedor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem aboutMenuItem;
-    private javax.swing.JMenuItem contentMenuItem;
-    private javax.swing.JMenuItem copyMenuItem;
-    private javax.swing.JMenuItem cutMenuItem;
-    private javax.swing.JMenuItem deleteMenuItem;
-    private javax.swing.JMenuItem deleteMenuItem1;
+    private javax.swing.JMenuItem About;
+    private javax.swing.JMenuItem Ayuda;
+    private javax.swing.JMenuItem Caja;
+    private javax.swing.JMenuItem Desconectar;
+    private javax.swing.JMenuItem Devolucion;
+    private javax.swing.JMenuItem HV;
+    private javax.swing.JMenuItem IM;
+    private javax.swing.JMenuItem Inventario;
+    private javax.swing.JMenuItem Salir;
+    private javax.swing.JMenuItem Venta;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JMenu editMenu;
-    private javax.swing.JMenuItem exitMenuItem;
-    private javax.swing.JMenuItem exitMenuItem1;
-    private javax.swing.JMenuItem exitMenuItem2;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu fileMenu1;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JMenuBar menuBar;
-    private javax.swing.JMenuItem pasteMenuItem;
-    private javax.swing.JMenuItem saveAsMenuItem;
     // End of variables declaration//GEN-END:variables
 
 }

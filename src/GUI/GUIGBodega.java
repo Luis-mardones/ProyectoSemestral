@@ -202,177 +202,155 @@ public class GUIGBodega extends javax.swing.JFrame {
 
     private void desconectaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_desconectaActionPerformed
         GUILogout ds = new GUILogout();
-        
+
         this.desktopPane.add("GUILogout", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
         ds.setVisible(true);
     }//GEN-LAST:event_desconectaActionPerformed
 
     private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
-   GUISalir ds = new GUISalir();
-        
+        GUISalir ds = new GUISalir();
+
         this.desktopPane.add("GUISalir", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
         ds.setVisible(true);
     }//GEN-LAST:event_salirActionPerformed
 
     private void listaperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listaperActionPerformed
-    GUIListaPersonal ds = new GUIListaPersonal();
-        
+        GUIListaPersonal ds = new GUIListaPersonal();
+
         this.desktopPane.add("GUIListaPersonal", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
         ds.setVisible(true);
     }//GEN-LAST:event_listaperActionPerformed
 
     private void actualizarperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarperActionPerformed
-      GUIUpdatePersonal ds = new GUIUpdatePersonal();
-        
+        GUIUpdatePersonal ds = new GUIUpdatePersonal();
+
         this.desktopPane.add("GUIUpdatePersonal", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
         ds.setVisible(true);
     }//GEN-LAST:event_actualizarperActionPerformed
 
     private void IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IMGActionPerformed
-      GUIInforme ds = new GUIInforme();
-        
+        GUIInforme ds = new GUIInforme();
+
         this.desktopPane.add("GUIInforme", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
         ds.setVisible(true);
     }//GEN-LAST:event_IMGActionPerformed
 
     private void ayudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ayudaActionPerformed
- GUIAyuda ds = new GUIAyuda();
-        
+        GUIAyuda ds = new GUIAyuda();
+
         this.desktopPane.add("GUIAyuda", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
         ds.setVisible(true);        ds.setVisible(true);    }//GEN-LAST:event_ayudaActionPerformed
 
     private void listaprodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listaprodActionPerformed
- GUIInventario ds = new GUIInventario();
-        
+        GUIInventario ds = new GUIInventario();
+
         this.desktopPane.add("GUIInventario", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
-        ds.setVisible(true);        // TODO add your handling code here:
+        ds.setVisible(true);
     }//GEN-LAST:event_listaprodActionPerformed
 
     private void ingresoprodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresoprodActionPerformed
- GUIRegistrarProducto ds = new GUIRegistrarProducto();
-        
+        GUIRegistrarProducto ds = new GUIRegistrarProducto();
+
         this.desktopPane.add("GUIRegistrarProducto", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
-        ds.setVisible(true);        // TODO add your handling code here:
+        ds.setVisible(true);
     }//GEN-LAST:event_ingresoprodActionPerformed
 
     private void salidaprodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salidaprodActionPerformed
- GUISalidaProducto ds = new GUISalidaProducto();
-        
+        GUISalidaProducto ds = new GUISalidaProducto();
+
         this.desktopPane.add("GUISalidaProducto", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
-        ds.setVisible(true);        // TODO add your handling code here:
+        ds.setVisible(true);
     }//GEN-LAST:event_salidaprodActionPerformed
 
     private void registroperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registroperActionPerformed
- GUIRegistroPersonal ds = new GUIRegistroPersonal();
-        
+        GUIRegistroPersonal ds = new GUIRegistroPersonal();
+
         this.desktopPane.add("GUIRegistroPersonal", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
-        ds.setVisible(true);        // TODO add your handling code here:
+        ds.setVisible(true);
     }//GEN-LAST:event_registroperActionPerformed
 
     private void aboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutActionPerformed
- GUIAbout ds = new GUIAbout();
-        
+        GUIAbout ds = new GUIAbout();
+
         this.desktopPane.add("GUIAbout", ds);
         Dimension d1 = this.desktopPane.getSize();
         Dimension d2 = ds.getSize();
-        
-        
+
         Long xMiddle = Math.round((d1.getWidth() - d2.getWidth()) / 2);
         Long yMiddle = Math.round((d1.getHeight() - d2.getHeight()) / 2);
-       
-        
+
         ds.setBounds(Integer.parseInt(xMiddle.toString()), Integer.parseInt(yMiddle.toString()), ds.getWidth(), ds.getHeight());
-        ds.setVisible(true);        // TODO add your handling code here:
+        ds.setVisible(true);
     }//GEN-LAST:event_aboutActionPerformed
 
     /**
