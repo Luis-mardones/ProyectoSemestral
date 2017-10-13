@@ -20,6 +20,7 @@ public class GUIAdmin extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         this.setExtendedState(MAXIMIZED_BOTH);
+        this.setTitle("Tools&Stuff: Adminstrador de Bodega V0.01");  
     }
 
     /**

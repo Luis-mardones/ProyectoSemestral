@@ -18,6 +18,7 @@ public class GUISalir extends javax.swing.JInternalFrame {
         initComponents();
         this.setClosable(true);
         this.setIconifiable(true);
+        this.setTitle("Salir");
     }
 
     /**
@@ -93,33 +94,34 @@ public class GUISalir extends javax.swing.JInternalFrame {
 
     private void yepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yepActionPerformed
         // TODO add your handling code here:
-                doClose(RET_OK);
+        doClose(RET_OK);
     }//GEN-LAST:event_yepActionPerformed
 
     private void nopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nopActionPerformed
         // TODO add your handling code here:
-                doClose(RET_CANCEL);
+        doClose(RET_CANCEL);
     }//GEN-LAST:event_nopActionPerformed
 
     private void helpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_helpActionPerformed
- private void doClose(int retStatus) {
+    private void doClose(int retStatus) {
         returnStatus = retStatus;
         setVisible(false);
         dispose();
-        
-        if(getReturnStatus() == GUISalir.RET_OK) {
+
+        if (getReturnStatus() == GUISalir.RET_OK) {
             System.exit(0);
         }
     }
+
     /**
      * @return the return status of this dialog - one of RET_OK or RET_CANCEL
      */
     public int getReturnStatus() {
         return returnStatus;
     }
-    
+
     /**
      * A return status code - returned if Cancel button has been pressed
      */

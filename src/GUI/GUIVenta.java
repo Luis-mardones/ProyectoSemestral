@@ -18,6 +18,7 @@ public class GUIVenta extends javax.swing.JInternalFrame {
         initComponents();
         this.setClosable(true);
         this.setIconifiable(true);
+        this.setTitle("Venta");
     }
 
     /**

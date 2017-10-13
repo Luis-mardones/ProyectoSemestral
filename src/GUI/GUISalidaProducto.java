@@ -18,6 +18,7 @@ public class GUISalidaProducto extends javax.swing.JInternalFrame {
         initComponents();
         this.setClosable(true);
         this.setIconifiable(true);
+        this.setTitle("Salida de Producto");
     }
 
     /**

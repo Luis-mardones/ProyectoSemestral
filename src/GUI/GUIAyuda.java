@@ -18,6 +18,8 @@ public class GUIAyuda extends javax.swing.JInternalFrame {
         initComponents();
         this.setClosable(true);
         this.setIconifiable(true);
+        this.setTitle("Ayuda");
+
     }
 
     /**
